@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 03 </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>execicio de tabeladas</h1>
+    <table>
+        <caption>
+            filmes favoritos
+        </caption>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th scope="col">grupo</th>
+                <th scope="col">nomes</th>
+                <th colspan="3" scope="colgroup">filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">mulheres</th>
+                <td>ana maria santos</td>
+                <td>alien</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>beatriz sousa</td>
+                <td>hulke</td>
+                <td>inception</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>claudia melo</td>
+                <td>oblivion</td>
+                <td>matrix</td>
+                <td>big hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">homens</th>
+                <td>bruno mendonça</td>
+                <td>intocáveis</td>
+                <td>amnésia</td>
+                <td>gladiador</td>
+            </tr>
+            <tr>
+                <td>daniel loureno</td>
+                <td>wall-e</td>
+                <td>oldboy</td>
+                <td>dangal</td>
+            </tr>
+                <tr>
+                    <td>fabiano mota</td>
+                    <td>star wars 5</td>
+                    <td>taxi driver</td>
+                    <td>toy stony</td>
+                </tr>
+        </tbody>
+       
+    </table>
+
+</body>
+
+</html>

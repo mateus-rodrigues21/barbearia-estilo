@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas grande</title>
+    <style>
+         
+        body 
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        thead,
+        tfoot {
+            background-color: rgba(63, 63, 3, 0.667);
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgba(63, 63, 3, 0.667);
+
+        }
+
+        table {
+            
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgb(162, 195, 195);
+        }
+
+            td.num{
+                text-align: right;
+            }
+            tbody > tr:nth-child(2n){
+                background-color: darkgray;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>tabelas grande</h1>
+    <!-- anotomia para tabelas 
+     caption = leguenda
+     thead = cabeça
+     tr, td, th 
+     tbody = corpo
+     tr,td, th  
+     tfoot = rodapé
+     tr,td th  -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 50px;">população</th>
+            </tr>
+        </thead>
+        <caption>população das unidades federativas</caption>
+
+        <tbody>
+
+              <tfoot>
+            <tr>
+                <th scope="row">total de abintantes</th>
+                <td class="num">248.332,213</td>
+            </tr>
+        </tfoot>
+            <tr>
+                <td> são paulo</td>
+                <td class="num"> 45 444 50</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">21 168 712</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro </td>
+                <td class="num">17 264 937</td>
+            </tr>
+            <tr>
+                <td>bhai</td>
+                <td class="num">14 876 000</td>
+            </tr>
+            <tr>
+                <td>paraná</td>
+                <td class="num">11 433 064</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">11 377 234</td>
+            </tr>
+            <tr>
+                <td>penambuco </td>
+                <td class="num">9 123 079</td>
+            </tr>
+            <tr>
+                <td>ceára</td>
+                <td class="num">8 602 443</td>
+            </tr>
+            <tr>
+                <td>pára</td>
+                <td class="num">8 656 332</td>
+            </tr>
+            <tr>
+                <td>santa catarina</td>
+                <td class="num">7 018 809</td>
+            </tr>
+            <tr>
+                <td>maranhão</td>
+                <td class="num">7 075 343</td>
+            </tr>
+            <tr>
+                <td>goias</td>
+                <td class="num">9 554 675</td>
+            </tr>
+            <tr>
+                <td>amazonas</td>
+                <td class="num">9 005 964</td>
+            </tr>
+            <tr>
+                <td>espinto santo </td>
+                <td class="num">12 334 452</td>
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td class="num">6 554 731</td>
+            </tr>
+            <tr>
+                <td>rio grande do norte </td>
+                <td class="num">13 332 221</td>
+            </tr>
+            <tr>
+                <td>mato grosso </td>
+                <td class="num">11 445 222</td>
+            </tr>
+            <tr>
+                <td>alagoas</td>
+                <td class="num">5 222 341</td>
+            </tr>
+            <tr>
+                <td>piaui</td>
+                <td class="num">4 999 675</td>
+            </tr>
+            <tr>
+                <td>distrito federal </td>
+                <td class="num"> 3 775 621</td>
+            </tr>
+            <tr>
+                <td>mato grosso do sul</td>
+                <td class="num">3 657 998</td>
+            </tr>
+            <tr>
+                <td>sergipe</td>
+                <td class="num">2 443 541</td>
+            </tr>
+            <tr>
+                <td>rondonia</td>
+                <td class="num">2 443 435 </td>
+            </tr>
+            <tr>
+                <td>tocantins</td>
+                <td class="num">2 333 095</td>
+            </tr>
+            <tr>
+                <td>acri </td>
+                <td class="num">2 332 123</td>
+            </tr>
+            <tr>
+                <td>amapá</td>
+                <td class="num">1 332 165</td>
+            </tr>
+            <tr>
+                <td>roraima</td>
+                <td class="num">1 996 043</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
