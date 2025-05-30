@@ -1,0 +1,19 @@
+*{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+section .hero {
+    align-items: center;
+    display: flex;
+    left: center;
+}
+section{
+    display: flex;
+    gap: 100px;
+    margin-left: center;
+}
