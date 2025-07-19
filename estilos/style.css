@@ -44,7 +44,21 @@ iframe#tela{
     width: 257px;
     height: 420px;
 
-
+}
+section#redes-socias{
+    text-align: right;
+}
+section#redes-socias img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    
+}
+section#redes-socias img:hover{
+   border: 2px solid yellow;
+   transform: translate(-3px,-3px);
+   box-shadow: 5px 5px 10px black;
 }
 
 
