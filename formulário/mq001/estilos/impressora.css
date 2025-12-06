@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*estilos para impressora*/
+
+*{
+    margin: 0px;
+    padding: 5px;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height:1.5em;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: 'esse artigo foi impresso através do www.cursoemvideio.com';
+}
+
