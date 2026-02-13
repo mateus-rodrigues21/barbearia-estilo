@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    header {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        max-width: 1200px;
+        margin: auto;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        color: white;
+    }
+
+    header span {
+        font-weight: 700;
+        color: green;
+        font-size: 28px;
+    }
+
+    header span span {
+        color: orange;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #0f172a 0%, #0ea5a3 100%);
+    }
+
+    button.btn-outline {
+        background-color: rgba(255, 255, 255, 0.3);
+        background-image: none;
+        border: 1px solid white;
+    }
+
+    .hero {
+        min-height: 90vh;
+        background-image: url(https://images.unsplash.com/photo-1761931403671-d020a14928d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBjdXR0aW5nJTIwaGFpciUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NjQxNjczMjB8MA&ixlib=rb-4.1.0&q=80&w=1080);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        /* centraliza na horizontal  */
+        justify-content: center;
+        /* centraliza na vertical  */
+        align-items: center;
+
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        padding: 30px;
+    }
+
+    .hero::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0f172af2 0%, #0ea5a3d9 100%);
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+        font-weight: 900;
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero h1 span {
+        color: #0ea5a3;
+    }
+
+    .hero p {
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+    }
+
+    .hero .buttons {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .content-stars {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        background-color: rgb(255, 255, 255, 0.07);
+        border-radius: 50px;
+        color: white;
+        position: relative;
+        z-index: 2;
+    }
+
+    .content-stars .stars {
+        display: flex;
+        color: orange;
+    }
+</style>
+
+<body>
+    <header>
+        <span>ELITE<span>BARBER</span></span>
+        <ul>
+            <li>Serviços</li>
+            <li>Equipe</li>
+            <li>Galeria</li>
+            <li>Preços</li>
+            <li>Localização</li>
+        </ul>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width: 20px">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+            </svg>
+            <p>Agendar agora</p>
+        </button>
+    </header>
+
+    <section class="hero">
+        <h1>
+            CORTES QUE DEFINEM <br />
+            <span>O SEU ESTILO</span>
+        </h1>
+        <p>Experiência premium em barbearia masculina. Profissionais especializados, ambiente sofisticado e produtos de
+            alta qualidade para o homem moderno.</p>
+        <div class="buttons">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" style="width: 20px">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                </svg>
+                <span>Agendar Agora</span>
+            </button>
+            <button class="btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" style="width: 20px">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                </svg>
+
+                <span>Ver serviços</span>
+            </button>
+        </div>
+
+        <div class="content-stars">
+            <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span>|</span>
+            <span>5.0 · +1.200 avaliações</span>
+        </div>
+    </section>
+    <div class="main">
+        <h1>Nossos Serviços</h1>
+        <p>Oferecemos uma gama completa de serviços para manter você sempre impecável</p>
+
+    </div>
+</body>
+
+</html>

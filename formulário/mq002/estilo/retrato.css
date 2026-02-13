@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/*aparelho em pé (portrait*/
+
+body{
+    background-color: rgb(56, 11, 99);
+    background-image: url(../bab03.jpg);
+}
